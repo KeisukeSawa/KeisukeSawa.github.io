@@ -1,0 +1,67 @@
+
+/* bodyタグ */
+body{
+    margin:0;
+    padding:0;
+    background-color:#fffafa;
+}
+
+/* h1タグ　headerで使用*/
+h1 {
+    padding:0px 0px 0px 30px;		/*見出し内容の位置調整*/
+    font-family:Arial, Helvetica, sans-serif;	/*フォントの種類*/
+    color: #000000; /* 色の設定（意味ない）*/
+}
+
+/* h1の中のaタグ hederの文字 */
+h1 a {
+    text-decoration:none;	/*リンクの下線を無くす*/
+    color: #000000; /* 色の設定 */
+     } 	
+
+h2 {
+   border-bottom: solid 3px #dcffcc;
+   width: 50%;
+   position: relative;
+}
+
+h2:after {
+   position: absolute;
+   content: " ";
+   display: block;
+   border-bottom: solid 3px #8fcd54;
+   bottom: -3px;
+   width: 20%;
+}
+
+/* 文字を囲む枠 */
+.box {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #f80606;
+    border-radius: 8px;
+    width: 50%;
+}
+.box .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #fffafa;
+    color: #000000;
+    font-weight: bold;
+}
+.box p {
+    margin: 0; 
+    padding: 0;
+}
+
+/* textを中央で左寄せする　*/
+.txt {
+    display: inline-block;
+    text-align: left;
+}
